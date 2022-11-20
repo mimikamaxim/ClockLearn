@@ -2,8 +2,8 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
 
     <TextView
         android:id="@+id/textHours"
@@ -20,7 +20,6 @@
         android:id="@+id/textMin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
         android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="@+id/buttonIncMin1"
         app:layout_constraintStart_toStartOf="@+id/buttonIncMin1"
@@ -33,9 +32,9 @@
         android:layout_height="0dp"
         android:text="-"
         android:textSize="34sp"
-        app:layout_constraintBottom_toBottomOf="@+id/buttonDec10"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonDecMin10"
         app:layout_constraintEnd_toEndOf="@+id/buttonIncH"
-        app:layout_constraintTop_toTopOf="@+id/buttonDec1" />
+        app:layout_constraintTop_toTopOf="@+id/buttonDecMin1" />
 
     <Button
         android:id="@+id/buttonIncH"
@@ -59,23 +58,22 @@
         app:layout_constraintTop_toBottomOf="@+id/buttonIncMin10" />
 
     <Button
-        android:id="@+id/buttonDec1"
+        android:id="@+id/buttonDecMin1"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
-        android:layout_marginTop="16dp"
         android:text="-1"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="@+id/buttonIncMin1"
         app:layout_constraintTop_toBottomOf="@+id/textMin" />
 
     <Button
-        android:id="@+id/buttonDec10"
+        android:id="@+id/buttonDecMin10"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:text="-10"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/buttonDec1"
-        app:layout_constraintTop_toBottomOf="@+id/buttonDec1" />
+        app:layout_constraintEnd_toEndOf="@+id/buttonDecMin1"
+        app:layout_constraintTop_toBottomOf="@+id/buttonDecMin1" />
 
     <Button
         android:id="@+id/buttonIncMin10"
