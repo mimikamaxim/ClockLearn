@@ -1,5 +1,6 @@
 package mimika.maxim
 
+import android.content.pm.ActivityInfo
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import mimika.maxim.databinding.TrainingBinding
@@ -14,6 +15,7 @@ class MainActivity : AppCompatActivity() {
         binding = TrainingBinding.inflate(layoutInflater)
         setContentView(binding.root)
         updateFields()
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT)
         with(binding.control){
             buttonIncH.setOnClickListener {
                 Time.hoursInc()
